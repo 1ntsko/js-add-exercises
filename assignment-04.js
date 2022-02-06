@@ -1,5 +1,5 @@
 function func(arr) {
-  return [...new Set(arr)];
+  return [...new Set(arr)].sort((a, b) => a - b);
 }
 
 console.log(func([1, 3, 3, 5, 5])); // ➞ [1, 3, 5]
